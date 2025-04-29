@@ -1,1 +1,110 @@
 
+<html dir="ltr" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Cadastro de clientes </h1>
+    <p style = "color: red"> Todos os campos são de preenchimento obrigatório </p> 
+
+    <form>
+
+    <fieldset>
+
+        <legend> Dados pessoais </legend>
+        
+        <label for = "nome"> Nome: </label>
+        <br>
+        <input type = "text" id = "nome" name = "nome" required> <br><br>
+
+        <label for = "data"> Data de nascimento: </label>
+        <br>
+        <input type = "date" id = "data" name = "data" required> <br><br>
+
+        <label for = "sexo"> Sexo: </label>
+        <br>
+        <input type = "radio" name = "sexo" value = "masculino" required> Masculino </input>
+        <input type = "radio" name = "sexo" value = "feminino" required> Feminino </input>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend> Informações de contato </legend>
+        
+        <label for = "email"> Email: </label>
+        <br>
+        <input type = "email" id = "email" name = "email" required> <br> <br>
+
+        <label for = "tel"> Telefone celular: </label>
+        <br>
+        <input type = "tel" id = "tel" name = "tel" required maxlength = "9" inputmode="numeric"> <br> <br>
+
+        <label for = "url"> Website pessoal/profissional: </label>
+        <br>
+        <input type = "url" id = "url" name = "url" required>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend> Localização </legend>
+
+        <label for ="endereco"> Endereço: </label>
+        <br>
+        <input type = "text" id = "endereco" name = "endereco" required>
+        <br><br>
+        <label for = "numero"> Número: </label>
+        <br>
+        <input type = "number" id = "numero" name = "numero" min = "1" max = "999" required>
+        <br><br>
+        <label for = "cidade"> Cidade: </label>
+        <br>
+        <input type = "text" id = "cidade" name = "cidade" required>
+        <br><br>
+
+        <label for = "estado"> Estado: </label>
+        <select id = "estado" name = "estado"> 
+            <option value = ""> Selecione </option>
+            <option value = "AC"> Acre </option>
+            <option value = "AL"> Alagoas </option>
+            <option value = "AP"> Amapá </option>
+            <option value = "AM"> Amazonas </option>
+            <option value = "BA"> Bahia </option>
+            <option value = "CE"> Ceará </option>
+            <option value = "DF"> Distrito Federal </option>
+            <option value = "ES"> Espírito Santo </option>
+            <option value = "GO"> Goiás </option>
+            <option value = "MA"> Maranhão </option>
+            <option value = "MT"> Mato Grosso </option>
+            <option value = "MS"> Mato Grosso do Sul </option>
+            <option value = "MG"> Minas Gerais </option>
+            <option value = "PA"> Pará </option>
+            <option value = "PB"> Paraíba </option>
+            <option value = "PR"> Paraná </option>
+            <option value = "PE"> Pernambuco </option>
+            <option value = "PI"> Piauí </option>
+            <option value = "RJ"> Rio de Janeiro </option>
+            <option value = "RN"> Rio Grande do Norte </option>
+            <option value = "RS"> Rio Grande do Sul </option>
+            <option value = "RO"> Rondônia </option>
+            <option value = "RR"> Roraima </option>
+            <option value = "SC"> Santa Catarina </option>
+            <option value = "SP"> São Paulo </option>
+            <option value = "SE"> Sergipe </option>
+            <option value = "TO"> Tocantins </option>
+        </select>
+
+    </fieldset>
+
+    <br>
+
+    <button type = "submit"> Cadastrar </button>
+    <button type = "reset"> Limpar </button>
+
+    </form>
+
+    
+</body>
+</html>
