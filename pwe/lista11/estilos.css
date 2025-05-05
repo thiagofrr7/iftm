@@ -37,13 +37,13 @@ ul li a:hover {
 	background-size: 30px 30px;
 }
 ul li:nth-child(1) a:hover {
-	background-image:url('..html5.png');
+	background-image:url('html5.png');
 }
 ul li:nth-child(2) a:hover {
-	background-image:url('..css3.png');
+	background-image:url('css3.png');
 }
 ul li:nth-child(3) a:hover {
-	background-image:url('..javascript.png');
+	background-image:url('javascript.png');
 }
 header {
 	text-align:center;
