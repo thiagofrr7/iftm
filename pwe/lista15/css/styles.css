@@ -1,0 +1,165 @@
+/* HTML */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+/* Body */
+
+body{
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* Header */
+
+nav, ul{
+    width: 100%;
+}
+
+header{
+    text-align: right;
+}
+
+header h1, header p{
+    padding: 15px;
+    margin: 0px;
+}
+
+header h1 {
+    font-size: 35px;
+    background-color: black;
+    color: white;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+main nav ul li a:hover {
+    color: crimson;
+}
+
+a:link, a:visited {
+    color:blue;
+}
+
+nav ul {
+    padding:0px;
+    list-style: none;
+}
+nav ul li {
+    padding:10px;
+    display:inline-block;
+}
+nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;
+    color: #003300;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+header nav ul{
+    text-align: center;
+    background-color: rgb(120, 120, 248);
+}
+
+header nav ul li a:link, header nav ul li a:visited {
+    color: white;
+    padding: 35px 10px 10px 10px;
+    font-weight: normal;
+    background-image: url('../img/logos_gray_transparent_70x70.png');
+    background-repeat: no-repeat;
+    background-position: center -20px;
+    background-size: 70px;
+    font-weight: bold;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;
+    color: #003300;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+header nav ul li a:hover {
+    background-image: url('../img/logos_resized_70x70.png');
+    color: yellow;
+
+}
+
+nav ul li {
+    padding:10px;
+    display:inline-block;
+}
+
+/* Main */
+
+main p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+main ul li, section p {
+    line-height: 1.5em;
+}
+
+section {
+    width: 1200px;
+    background-color:white;
+    margin: auto;
+    padding: 30px;
+}
+
+section h2 {
+    transition: all 0.5s;
+    margin-bottom: 30px;
+}
+
+section h2:hover {
+    letter-spacing: 5px;
+}
+
+section img{
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display:block;
+}
+
+section ul {
+    margin-left: 50px;
+}
+
+section p {
+    margin: 25px 0px;
+}
+
+/* Footer */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: gray;
+}
+
+footer p {
+    color: white;
+}
+
+footer a:link, footer a:visited {
+    color: lightblue !important;
+}
