@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    background-color: black;
+}
+
+.secao1 h2 {
+    text-align: center;
+    color: white;
+    background-color: darkblue;
+    padding: 15px;
+}
+
+.secao1 h3 {
+    color: orangered;
+    padding-bottom: 10px;
+}
+
+.secao1 {
+    width: 1200px;
+    background-color: white;
+    margin: auto;
+}
+
+.secao1 > div {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao1 > div {
+    flex-direction: row;
+}
+
+.secao1 > div > div {
+    justify-content: center;
+}
+
+.secao1 > div > div:nth-of-type(2) > p:nth-of-type(1){
+    font-weight: bold;
+}
+
+.secao1 > div > div:nth-of-type(2) > p:nth-of-type(2){
+    text-align: justify;
+}
