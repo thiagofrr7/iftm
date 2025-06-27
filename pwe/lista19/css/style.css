@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    justify-content: center;
+}
+
+body {
+    font-family: arial;
+    background-color: rgb(34,34,34);
+}
+
+header {
+    background-color: black;
+}
+
+nav {
+    background-color: darkblue;
+}
+
+section {
+    background-color: white;
+    margin: auto;
+    padding-bottom: 0;
+    width: 1200px;
+}
+
+.sectionA > div {
+    display: flex;
+    flex-direction: row;  
+}
+
+.sectionA img {
+    padding: 40px 5px;
+    width: 700px;
+}
+
+.sectionA div:nth-of-type(2){
+    padding: 30px 30px;
+    align-items: center;
+}
+
+.sectionA h2 {
+    color: red;
+}
+
+.sectionA p {
+    align-items: center;
+    line-height: 1.5em;
+    color: black;
+    text-align: justify;
+    font-size: 17px;
+}
+
+
+.sectionB {
+    margin-top: 10px;
+}
+
+.sectionB h2 {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sectionB > div {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.sectionB div > div:nth-of-type(2) {
+    text-align: justify;
+    padding: 5px;
+}
+
+.sectionB div > div > div {
+    text-align: center;
+}
+
+.sectionC {
+    background-color: lightgray;
+    margin-top: 10px;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.sectionC ul li {
+    margin-left: 40px;
+}
+.sectionC > div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.sectionC > div > div {
+    width: 100%;
+}
+
+div {
+    border: 1px solid red;
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
