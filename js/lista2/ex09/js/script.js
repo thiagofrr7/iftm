@@ -1,13 +1,10 @@
-function sortearOrdem() {
-  texto = prompt("Digite um nome por linha:");
-
-  lista = texto.split("\n");
+function sortear() {
+  n = prompt("Quantas pessoas?");
   nomes = [];
 
-  for (i = 0; i < lista.length; i++) {
-    if (lista[i] != "") {
-      nomes.push(lista[i]);
-    }
+  for (i = 0; i < n; i++) {
+    nome = prompt("Nome da pessoa " + (i + 1));
+    nomes.push(nome);
   }
 
   for (i = nomes.length - 1; i > 0; i--) {
@@ -17,12 +14,8 @@ function sortearOrdem() {
     nomes[j] = temp;
   }
 
-  resultado = "Ordem sorteada:\n";
+  document.write("<h3>Ordem sorteada:</h3>");
   for (i = 0; i < nomes.length; i++) {
-    resultado += (i + 1) + ". " + nomes[i] + "\n";
+    document.write((i + 1) + ". " + nomes[i] + "<br>");
   }
-
-  document.write(resultado);
 }
-
-sortearOrdem();
