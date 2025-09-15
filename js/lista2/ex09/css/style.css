@@ -1,0 +1,8 @@
+.nomes {
+    border-bottom: 3px solid black;
+    padding-bottom: 4px;
+}
+
+.nomes:last-child {
+    border-bottom: none;
+}
