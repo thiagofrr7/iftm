@@ -1,0 +1,20 @@
+.h1diferente {
+    text-align: center;
+}
+
+.h2diferente {
+    text-align: center;
+    color: red;
+}
+
+.grupo-cartas {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+.cartas {
+  display: flex;
+  gap: 10px;
+}
