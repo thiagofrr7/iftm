@@ -6,13 +6,16 @@ btnResultado.addEventListener("click", calculo);
 
 function calculo() {
 
-    soma = parseFloat(txt1b.value) + parseFloat(txt2b.value);
+    nota1 = parseFloat(txt1b.value);
+    nota2 = parseFloat(txt2b.value);
 
-    if (txt1b.value < 0 || txt1b.value > 50)
+    soma = nota1 + nota2;
+
+    if (nota1 < 0 || nota1 > 50)
         alert("Nota 1 inválida. Informe uma nova entre 0 e 50");
-    else if (txt1b.value < 0 || txt1b.value > 50)
-        alert("Nota 1 inválida. Informe uma nova entre 0 e 50");
-    else if (soma > 50.0) {
+    else if (nota2 < 0 || nota2 > 50)
+        alert("Nota 2 inválida. Informe uma nova entre 0 e 50");
+    else if (soma > 60.0) {
         alert(`Você foi aprovado! A soma das notas deu ${soma} pontos. ${soma - 60} pontos acima da média 60.0 de aprovação.`)
     }
     else
