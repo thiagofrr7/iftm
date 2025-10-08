@@ -1,3 +1,21 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.divPersonagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.corDiferente {
+    background-color: rgb(116, 241, 81);
+}
+
+.corDiferente:hover {
+    background-color: rgb(191, 255, 180);
 }
