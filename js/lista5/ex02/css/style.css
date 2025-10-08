@@ -1,21 +1,72 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
 }
 
 .divPersonagens {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: flex-start;  
+  gap: 5px;                 
+  flex-wrap: wrap;          
 }
 
-
-.corDiferente {
-    background-color: rgb(116, 241, 81);
+.candidatos {
+  background-color: rgba(142, 212, 123, 0.89);
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.corDiferente:hover {
-    background-color: rgb(191, 255, 180);
+.candidatos:hover {
+  background-color: rgb(191, 255, 180);
 }
+
+/* Não consegui deixar o h1 fora da caixa, desorganizava a div */
+.candidatos h1 {
+  background-color: white;
+  color: red;
+  width: 100%;
+  margin-bottom: 10px; 
+  font-size: 25px;
+  padding: 5px 0;
+}
+
+.candidatos h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.candidatos img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.candidatos p {
+  margin-top: auto; 
+  font-size: 16px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.votos {
+    color: red;
+    font-size: 20px;
+}
+
