@@ -12,9 +12,10 @@ window.addEventListener("DOMContentLoaded", function(){
         X = X - 1;
         contador.textContent = X;
 
-        if(X >= 0){
+        if(X === 0){
             clearInterval(intervalo);
             window.location.href="https://www.google.com";
         }
     }
+
 })
