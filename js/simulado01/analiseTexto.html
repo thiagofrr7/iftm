@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisar Texto</title>
+    <link rel="stylesheet" href="css/analiseTexto.css">
+</head>
+<body>
+    
+    <h2>1) Texto informado pelo usuário na página anterior</h2>
+    <div id="armazenaTexto"></div>
+
+    <h2>2) Você gostaria de analisar a informação disponibilizada pelo usuário na página anterior?</h2>
+    <form>
+        <select id="novoSelect">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+    </form>
+    <p>OBS: Se você responder "não" na pergunta anterior (2), por favor informe um novo texto na caixa abaixo:</p>
+
+    <input type="text" id="textoCaixa">
+    <br>
+    <input type="button" value="Analisar" id="botaoAnalise">
+
+    <h2>3) Quantidade de palavras contidas no texto:</h2>
+
+    <div class="caixa">
+    <label>4) Palavras iniciadas com a letra M:</label>
+    <input type="text" id="textoM">
+    </div>
+
+    <div class="caixa">
+    <label>5) Primeira palavra do texto:</label>
+    <input type="text" id="textoPrimeira">
+    </div>
+
+    <div class="caixa">
+    <label>6) Segunda palavra do texto:</label>
+    <input type="text" id="textoSegunda">
+    </div>
+
+    <div class="caixa">
+    <label>7) Última palavra do texto:</label>
+    <input type="text" id="textoUltima">
+    </div>
+
+    <input type="button" value="Abrir a página do papai noel" id="botaoNatal">
+
+    <script src="js/analiseTexto.js"></script>
+</body>
+</html>
