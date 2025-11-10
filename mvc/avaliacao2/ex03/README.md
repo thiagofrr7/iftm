@@ -5,6 +5,7 @@ Print da versão md+ (lg+) do site:
 
 
 Print da versão mobile (lg-) do site:
-<img width="449" height="897" alt="{2A46E04D-8707-4FEC-B833-ABC9F0251039}" src="https://github.com/user-attachments/assets/e4cedbd8-5977-405a-b5fc-1acff55de2c4" />
+<img width="800" height="800" alt="{2A46E04D-8707-4FEC-B833-ABC9F0251039}" src="https://github.com/user-attachments/assets/e4cedbd8-5977-405a-b5fc-1acff55de2c4" />
+
 
 
