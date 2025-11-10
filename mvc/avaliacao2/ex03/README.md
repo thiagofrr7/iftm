@@ -5,7 +5,10 @@ Print da versão md+ (lg+) do site:
 
 
 Print da versão mobile (lg-) do site:
+
+
 <img width="394" height="630" alt="{8789B6E1-58EF-4783-8855-179AC605D345}" src="https://github.com/user-attachments/assets/b1d629f9-3e82-4d35-9e05-bf347b036898" />
+
 
 
 
