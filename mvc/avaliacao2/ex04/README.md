@@ -1,0 +1,3 @@
+Relatório do Exercício 4 - Thiago Ferreira Rocha
+
+Nesse exercício eu usei o molde do primeiro exercício que já mexia com cards e imagens e adicionei os atributos requeridos. Coloquei primeiro as novas classes e depois de inseridas coloquei os cards com a mesma altura utilizando o align-items-strech na div maior e h-100 nas menores. Depois eu coloquei os atributos equivalentes a galeria 3x3 (maior) e 2x2(menor) com md-3. Na hora de padronizar as imagens, eu optei pelo formato 1x1 que era o que melhor redimensionava os arquivos. No fim, dupliquei os cards para completarem 6 e ficar mais visível a galeria 3x3 e 2x2.
