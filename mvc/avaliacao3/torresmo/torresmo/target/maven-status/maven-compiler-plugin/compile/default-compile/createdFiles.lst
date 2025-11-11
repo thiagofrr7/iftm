@@ -1,0 +1,5 @@
+com\professorangoti\torresmo\repository\ProdutoRepository.class
+com\professorangoti\torresmo\model\Produto.class
+com\professorangoti\torresmo\TorresmoApplication.class
+com\professorangoti\torresmo\controller\ProdutoController.class
+com\professorangoti\torresmo\service\ProdutoService.class
