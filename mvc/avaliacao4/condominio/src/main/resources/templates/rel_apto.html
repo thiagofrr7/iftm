@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Apartamentos</title>
+</head>
+<body>
+<h2>Lista de Apartamentos</h2>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Número Porta</th>
+        <th>Quartos</th>
+        <th>Tipo Ocupação</th>
+        <th>Proprietário</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="a : ${apartamentos}">
+        <td th:text="${a.id}"></td>
+        <td th:text="${a.numeroPorta}"></td>
+        <td th:text="${a.quantidadeQuartos}"></td>
+        <td th:text="${a.tipoOcupacao}"></td>
+        <td th:text="${a.proprietario.nome}"></td>
+        <td>
+            <a th:href="@{/apartamento/editar/{id}(id=${a.id})}">Editar</a> |
+            <a th:href="@{/apartamento/deletar/{id}(id=${a.id})}">Deletar</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<a th:href="@{/apartamento/cadastro}">Cadastrar Novo Apartamento</a>
+</body>
+</html>

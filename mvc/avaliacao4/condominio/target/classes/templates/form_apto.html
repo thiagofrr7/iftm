@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Apartamento</title>
+</head>
+<body>
+<h2>Cadastro de Apartamento</h2>
+
+<form th:action="@{/apartamento/salvar}" th:object="${apartamento}" method="post">
+    <div>
+        <label>Número da Porta:</label>
+        <input type="number" th:field="*{numeroPorta}" />
+        <span th:if="${#fields.hasErrors('numeroPorta')}" th:errors="*{numeroPorta}"></span>
+    </div>
+    <div>
+        <label>Quantidade de Quartos:</label>
+        <input type="number" th:field="*{quantidadeQuartos}" />
+        <span th:if="${#fields.hasErrors('quantidadeQuartos')}" th:errors="*{quantidadeQuartos}"></span>
+    </div>
+    <div>
+        <label>Tipo de Ocupação:</label>
+        <select th:field="*{tipoOcupacao}">
+            <option value="Proprietário">Proprietário</option>
+            <option value="Inquilino">Inquilino</option>
+            <option value="Vazio">Vazio</option>
+        </select>
+        <span th:if="${#fields.hasErrors('tipoOcupacao')}" th:errors="*{tipoOcupacao}"></span>
+    </div>
+    <div>
+        <label>Proprietário:</label>
+        <select th:field="*{proprietario}" th:object="${apartamento}">
+            <option th:each="p : ${proprietarios}" 
+                    th:value="${p}" 
+                    th:text="${p.nome}"></option>
+        </select>
+        <span th:if="${#fields.hasErrors('proprietario')}" th:errors="*{proprietario}"></span>
+    </div>
+    <button type="submit">Salvar</button>
+</form>
+
+<a th:href="@{/apartamento/lista}">Ver Lista de Apartamentos</a>
+</body>
+</html>
