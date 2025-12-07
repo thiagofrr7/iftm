@@ -4,8 +4,8 @@ const personagens = ["Last of the Order", "Assassin Prince", "Vigilante Thief", 
 // Criar cartas (2 de cada personagem)
 let cartas = [];
 personagens.forEach((nome, i) => {
-    cartas.push({nome: nome, img: `../img/personagem${i+1}.jpg`});
-    cartas.push({nome: nome, img: `../img/personagem${i+1}.jpg`});
+    cartas.push({nome: nome, img: `/iftm/projetofinal/img/personagem${i+1}.jpg${i+1}.jpg`});
+    cartas.push({nome: nome, img: `/iftm/projetofinal/img/personagem${i+1}.jpg${i+1}.jpg`});
 });
 
 // Embaralhar cartas
@@ -74,4 +74,5 @@ window.addEventListener('scroll', () => {
     document.querySelector('.sidebar.left').style.top = `${-scrollY * 0.2}px`;
     document.querySelector('.sidebar.right').style.top = `${-scrollY * 0.2}px`;
 });
+
 
