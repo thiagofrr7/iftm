@@ -78,16 +78,16 @@ body.modo-medio #cardsJogadores {
 }
 
 body.modo-medio {
-    background-image: url('../img/background1.png');
+    background-image: url('./img/background1.png');
 }
 
 body.modo-dificil {
-    background-image: url('../img/background2.png');
+    background-image: url('./img/background2.png');
     background-size: 90%;
     
 }
 body.modo-facil {
-    background-image: url('../img/background3.png');
+    background-image: url('./img/background3.png');
     background-size: 90%;
 }
 
@@ -196,3 +196,4 @@ header a:hover{
   color: red;
   transition: 0.3s;
 }
+
