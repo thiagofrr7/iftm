@@ -69,20 +69,20 @@ h1 {
 }
 
 .modomedio {
-    background-image: url('/img/modomedio.png');
+    background-image: url('./img/modomedio.png');
     background-position: -44px 50%;
     cursor: pointer;
 }
 
 .modofacil{
-    background-image: url('/img/modofacil.jpg');
+    background-image: url('./img/modofacil.jpg');
     background-position: center;
     text-align: center;
     cursor: pointer;
 }
 
 .mododificil{
-    background-image: url('/img/mododificil.jpg');
+    background-image: url('./img/mododificil.jpg');
     background-position: center;
     text-align: center;
     cursor: pointer;
@@ -98,4 +98,5 @@ h1 {
 .aSair:hover{
   color: red;
   transition: 0.3s;
+
 }
