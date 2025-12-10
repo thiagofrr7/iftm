@@ -45,7 +45,6 @@ h1 {
 }
 
 .cardqtd-text {
-  color: green;
   text-align: center;
   font-size: 16px;
   font-weight: normal;
@@ -101,6 +100,7 @@ h1 {
   transition: 0.3s;
 
 }
+
 
 
 
