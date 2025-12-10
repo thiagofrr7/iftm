@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body.modo-medio #cardsJogadores #status {
+    margin-left: 100px; 
+    text-align: center; 
+}
+
+body.modo-dificil #cardsJogadores #status {
+    margin-left: 20px; 
+    text-align: center;
+}
+
+#tabpont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+#cardsJogadores {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#cardsJogadores > div {
+    margin-left: 100px;
+    padding: 60px 200px;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 0, 0, 0.5);
+    min-width: 200px;
+}
+
+#cardsJogadores h1 {
+    color: red;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+#cardsJogadores p {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 110px);
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 850px;
+    transform: scale(0.7);
+    transform-origin: left center;
+}
+
+body.modo-medio #cardsJogadores {
+    margin-left: 30px;
+}
+
+body.modo-medio {
+    background-image: url('../img/background1.png');
+}
+
+body.modo-dificil {
+    background-image: url('../img/background2.png');
+    background-size: 90%;
+    
+}
+body.modo-facil {
+    background-image: url('../img/background3.png');
+    background-size: 90%;
+}
+
+body.modo-dificil #cardsJogadores {
+    left: 20px; 
+    transform: translateY(-50%) scale(0.7); 
+}
+
+body.modo-dificil #cardsJogadores > div {
+    padding: 60px 200px;
+    margin-left: 20px;
+}
+
+body.modo-dificil #tabuleiro {
+    margin-left: 600px; 
+    transform: scale(0.6); 
+}
+
+body.modo-facil #cardsJogadores {
+    left: 150px; 
+}
+
+body.modo-facil #cardsJogadores > div {
+    margin-left: -10px;
+    padding: 60px 200px; 
+}
+
+body.modo-facil #tabuleiro {
+    margin-left: 800px;
+    transform: scale(0.85); 
+}
+
+body.modo-medio #cardsJogadores {
+    left: 100px; 
+}
+
+body.modo-medio #cardsJogadores > div {
+    padding: 50px 150px;
+    height: 165px;
+}
+
+body.modo-medio #tabuleiro {
+    margin-left: 850px;
+    transform: scale(0.7);
+}
+
+.card {
+    width: 110px;
+    height: 210px;
+    perspective: 1000px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-front {
+    background-image: url('../img/backcard1.jpg');
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+}
+
+.card-front img, .card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+#status {
+    color: gold;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    margin-left: 100px; 
+}
+header a:hover{
+  color: red;
+  transition: 0.3s;
+}
