@@ -165,7 +165,7 @@ body.modo-medio #tabuleiro {
 }
 
 .card-front {
-    background-image: url('../img/backcard1.jpg');
+    background-image: url('./img/backcard1.jpg');
 }
 
 .card-back {
@@ -196,4 +196,5 @@ header a:hover{
   color: red;
   transition: 0.3s;
 }
+
 
