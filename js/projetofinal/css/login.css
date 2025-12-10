@@ -2,7 +2,7 @@
 
 main {
     background-image: url('../img/paginainicial.png');
-    background: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -67,4 +67,5 @@ main {
 header a:hover{
     color: purple;
     transition: 0.3s;
+
 }
