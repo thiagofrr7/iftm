@@ -7,8 +7,8 @@ import bcrypt from 'https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/+esm';
 //     console.log("senha criptografada: " + data.senha);
 // })
 
-const senhasCript = (url) = usersData.forEach(data => {
-    const senhaUser = url;
+const senhasCript = (urlCriptografia) = usersData.forEach(data => {
+    const senhaUser = urlCriptografia;
     const salt = bcrypt.genSaltSync(10);
     const hash = bcrypt.hashSync(senhaUser, salt);
     // console.log(hash);
