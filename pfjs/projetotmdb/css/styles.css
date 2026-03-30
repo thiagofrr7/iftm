@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Importações */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+/* Foto de fundo do body */
+
+body {
+    background-image: url("../img/wallpaper2.webp");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+    min-height: 100vh; 
+}
+
+/* Subtítulo e nav */
+
+nav {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #4b0000, #8b0000, #4b0000);
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 20px;
+    margin: -15px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.9),  
+        0 10px 15px rgba(0, 0, 0, 0.7);  
+}
+
+.subtitulo {
+    border: 2px solid yellow;
+    font-weight: bold;
+    margin-left: 10px;
+    color: black;
+    font-size: 47px;
+    letter-spacing: 4px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+
+    background:
+    repeating-linear-gradient(
+        to bottom,
+        black 0px,
+        black 1px,          
+        transparent 2px,
+        transparent 18px   
+    ),
+    repeating-linear-gradient(
+        to right,
+        black 0px,
+        black 1px,          
+        transparent 2px,
+        transparent 30px
+    ),
+    white;                
+
+}
+
+@keyframes flicker {
+    0%   { opacity: 1; }
+
+    5%   { opacity: 0.5; }
+    10%  { opacity: 1; }
+
+    15%  { opacity: 0.3; }
+    20%  { opacity: 1; }
+
+    50%  { opacity: 1; }
+
+    55%  { opacity: 0.2; }
+    57%  { opacity: 1; }
+
+    70%  { opacity: 1; }
+
+    75%  { opacity: 0.2; }
+    80%  { opacity: 1; }
+
+    100% { opacity: 1; }
+}
+
+  .off1 {
+    animation: flicker 5s infinite;
+  }
+  .off2 {
+    animation: flicker 6.5s infinite;
+  }
+
+  .off3 {
+    animation: flicker 4.2s infinite;
+  }
+
+  .off4 {
+    animation: flicker 3s infinite;
+  }
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-shadow: 
+        0 0 5px rgb(36, 180, 236),
+        0 0 10px darkblue,
+        0 0 20px lightblue;
+}
+
+nav ul li {
+    border-bottom: 1px solid white;
+}
+
+.listaNav {
+    
+    padding: 1px;
+    border: 6px solid white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 20px;
+
+    list-style: none;
+
+    width: 20%; 
+}
+
+/* Título da página e animações */
+
+
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;          
+    justify-content: center;    
+    align-items: center;        
+    gap: 30px;     
+    font-size: 70px;
+    text-align: center;
+    margin: 60px 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: gold;
+    background: linear-gradient(90deg, #ffd700, #fff5b7, #ffd700);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+}
+
+.title:hover {
+    transform: scale(1.05);
+    text-shadow: 
+        0 0 5px rgba(255,215,0,0.5),
+        0 0 10px rgba(255,215,0,0.5),
+        0 0 20px rgba(255,215,0,0.8);
+    text-shadow: 
+        0 0 10px gold,
+        0 0 20px gold,
+        0 0 40px gold;
+}
+
+.oscar {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle; 
+}
+
+.oscar img {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    height: 200%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.animated {
+    opacity: 0;
+}
+
+.title:hover .animated {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.title:hover .static {
+    opacity: 0;
+}
+
+.title:hover .oscar {
+    filter: drop-shadow(0 0 10px gold);
+}
+
+/* Posters e cards */
+
+.divFilmes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 100px;
+
+}
+ 
+.card h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    background-color:  darkblue;
+    border-radius: 5px;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    /* font-family: "Bebas Neue", sans-serif; */
+
+    word-spacing: 2px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.card {
+    color: white;
+    text-align: center;
+}
+
+.poster {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.poster:hover {
+    cursor: pointer;
+}
+
+.molduraPoster {
+    position: relative;
+    display: inline-block;
+
+    filter: 
+    drop-shadow(0 0 5px #ffd700)
+    drop-shadow(0 0 10px #ffae00)
+    drop-shadow(0 0 20px #ff8c00)
+}
+
+.molduraPoster::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+
+  background-image: url("../img/moldura.png");
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+
+  pointer-events: none; 
+}
+
+.card p {
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Modal */
+
+.interfaceModal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);         
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.conteudoModal {
+    background-color: #1a1a1a;
+    margin: 2% auto; 
+    padding: 20px;
+    border: 2px solid gold;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    max-height: 90vh;   
+    overflow-y: auto;    
+    animation: fadeIn 0.3s ease;
+}
+
+.conteudoModal::-webkit-scrollbar {
+    width: 8px;
+}
+.conteudoModal::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 10px;
+}
+
+.botaoFechar {
+    position: absolute;
+    right: 20px; top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: gold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
