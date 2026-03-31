@@ -207,7 +207,7 @@ nav ul li {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    padding: 40px 60px;
+    padding: 100px;
 }
  
 @media (max-width: 1400px) {
