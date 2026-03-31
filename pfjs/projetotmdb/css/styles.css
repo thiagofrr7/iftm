@@ -327,6 +327,11 @@ nav ul li {
     cursor: pointer;
     color: gold;
 }
+
+.no-scroll {
+    overflow: hidden !important;
+    height: 100vh;
+}
  
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
