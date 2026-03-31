@@ -8,11 +8,13 @@ window.addEventListener("DOMContentLoaded", function() {
 
     botaoFechar.addEventListener("click", function() {
         interfaceModal.style.display = "none";
+        document.body.style.overflow = "";
     });
 
     interfaceModal.addEventListener("click", function(e) {
         if (e.target === interfaceModal) {
             interfaceModal.style.display = "none";
+            document.body.style.overflow = "";
         }
     });
 
@@ -57,6 +59,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
             poster.addEventListener("click", function() {
                 interfaceModal.style.display = "flex";
+                document.body.style.overflow = "hidden";
 
                 const ano = filme.release_date.slice(0, 4);
 
@@ -68,7 +71,7 @@ window.addEventListener("DOMContentLoaded", function() {
                     <br>
                     <p>Gêneros: ${filme.genre_ids.map(id => generosMap[id]).join(", ")}</p>
                     <br>
-                    <p style="font-size:18px; margin-top:10px;">Avaliação do público: 🌟 <span style="background-color: gold; color: black; border-radius: 5px; font-size: 24px">${filme.vote_average.toFixed(1)}</span></p>
+                    <p style="font-size:18px; margin-top:10px;">Avaliação geral: 🌟 <span style="background-color: gold; color: black; border-radius: 5px; font-size: 24px">${filme.vote_average.toFixed(1)}</span></p>
 
                 `;
             });
