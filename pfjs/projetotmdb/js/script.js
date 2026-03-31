@@ -8,13 +8,13 @@ window.addEventListener("DOMContentLoaded", function() {
 
     botaoFechar.addEventListener("click", function() {
         interfaceModal.style.display = "none";
-        document.body.style.overflow = "";
+        document.body.classList.remove("no-scroll");
     });
 
     interfaceModal.addEventListener("click", function(e) {
         if (e.target === interfaceModal) {
             interfaceModal.style.display = "none";
-            document.body.style.overflow = "";
+            document.body.classList.remove("no-scroll");
         }
     });
 
@@ -59,7 +59,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
             poster.addEventListener("click", function() {
                 interfaceModal.style.display = "flex";
-                document.body.style.overflow = "hidden";
+                document.body.classList.add("no-scroll");
 
                 const ano = filme.release_date.slice(0, 4);
 
