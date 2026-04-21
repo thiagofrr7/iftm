@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+.divInterface {
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 170px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1:hover {
+    color: red;
+}
+
+.botaoValidar {
+    background-color: darkblue;
+    color: white;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+.botaoValidar:hover {
+    background-color: green;
+}

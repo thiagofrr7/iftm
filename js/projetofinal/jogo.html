@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Memory</title>
+    <link rel="stylesheet" href="css/fixo.css">
+    <link rel="stylesheet" href="css/jogo.css">
+</head>
+<body>
+
+    <header>
+    <div class="logo">
+        <img src="img/crystal-ball.gif" alt="Failing Memory Logo" width="20px">
+        <h1><a href="index.html" style="color: white; text-decoration: none">Falling Memory</a></h1>
+    </div>
+    <nav>
+    <div class="saida">
+        <p id="contaLogada"></p>
+        <a href="index.html">Sair</a>
+        <img src="img/stickleft.gif" alt="Gif de um personagem em Stick correndo" width="50px">
+    </div>
+    </nav>
+    </header>
+
+
+    <div class="sidebar left"></div>
+    <div class="sidebar right"></div>
+
+    <main>
+
+        <div id="tabpont">
+
+            <div id="cardsJogadores">
+                <div id="divJogador1">
+                    <h1 id="jogador1"></h1>
+                    <p id="pontuacao1">Pontuação</p>
+                </div>
+                <div id="divJogador2">
+                    <h1 id="jogador2"></h1>
+                    <p id="pontuacao2">Pontuação</p>
+                </div>
+                <p id="status" class="status" style="text-align: center; background-color: black">Vez do Jogador 1</p>
+            </div>
+
+
+            <div class="jogadores"></div>
+            <div id="tabuleiro"></div>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Thiago Ferreira Games © Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

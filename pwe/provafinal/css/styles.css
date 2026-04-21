@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Versão: Mobile */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdf6e3; 
+  color: #333;
+}
+
+header {
+  background-color: #6b3e3e; 
+  color: #fff7cc;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff7cc;
+}
+
+header h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 24px;
+  color: #fff7cc;
+}
+
+header > div > div:last-child {
+  display: flex;
+  gap: 20px;
+}
+
+header > div > div:last-child div {
+  background-color: #4b2e2e;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+header > div > div:last-child img {
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+header > div > div:last-child div:hover {
+  background-color: #fff7cc;
+  color: #4b2e2e;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #4b2e2e; 
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff7cc;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #fff7cc;
+  color: #4b2e2e;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.section_bemvindo h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.section_bemvindo {
+    padding: 30px;
+}
+
+p {
+    text-align: justify;
+}
+
+section:nth-of-type(even){
+    background-color: black;
+}
+
+.section_colecionadores {
+  padding: 30px;
+}
+
+.section_colecionadores h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.section_colecionadores h2 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.section_colecionadores img {
+  width: 80px;
+  display: block;
+  margin: auto;
+}
+
+/* Index 2 */
+
+.section_sobrenos {
+  padding: 30px;
+}
+
+.section_sobrenos h1 {
+  margin-bottom: 20px;
+}
+
+.section_sobrenos > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_sobrenos h1 {
+  text-align: center;
+}
+
+.section_sobrenos p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.section_faq {
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+.section_faq h1 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.section_faq p {
+  padding-bottom: 10px;
+}
+
+.section_contato {
+  padding: 30px;
+}
+
+.section_contato h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.section_contato h3{
+  text-align: center;
+}
+
+.section_contato > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.section_contato img {
+  width: 80px;        
+  height: 80px;        
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto;
+}
+
+.section_contato h3 {
+  padding-top: 10px;
+}
+
+.section_contato a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Index 3 */
+
+.section_noticias > div > div {
+  padding: 20px;
+}
+
+.section_noticias h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.section_noticias h2 {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.section_noticias > div {
+  display: flex; 
+  flex-direction: column;
+}
+.section_novoslancamentos {
+  padding: 20px;
+}
+
+.section_novoslancamentos h2 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.section_novoslancamentos h3 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section_novoslancamentos h3, .section_novoslancamentos p {
+  color: white;
+}
+
+.section_novoslancamentos p {
+  padding-bottom: 30px;
+}
+
+.section_novoslancamentos p {
+  padding-bottom: 30px;
+}
+
+.section_newsletter h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.section_newsletter p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.input_email {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.button_padrao {
+  padding: 10px 15px 10px 15px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Index 4 */
+
+.section_catalogo h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.section_catalogo {
+  padding: 40px 20px;
+  background-color: #f7efe2;
+  text-align: center;
+}
+
+.section_catalogo h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #4b2e2e;
+}
+
+.section_catalogo p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.section_tabelas {
+  margin: 0 auto;
+}
+
+.section_tabelas h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.section_tabelas h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.section_tabelas h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section_tabelas > div {
+  padding: 30px;
+}
+
+.section_tabelas > div > div:nth-of-type(1) p {
+  padding: 20px
+}
+.section_tabelas h1, .section_tabelas h2 {
+  padding: 10px;
+}
+
+.section_tabelas button {
+  margin-top: 0px;
+}
+
+.section_discos {
+  padding: 20px;
+}
+
+.section_discos h1 {
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+}
+
+/* CSS do catálogo de álbuns, grade, etc. */
+
+.catalogo h1 {
+    color: white;
+    padding-bottom: 40px;
+}
+
+.catalogo {
+  padding: 40px 20px;
+  background-color: #f7efe2;
+  text-align: center;
+}
+
+.catalogo h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #4b2e2e;
+}
+
+.catalogo p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.grade-produtos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.produto {
+  background-color: #fff7cc;
+  border: 2px solid #4b2e2e;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.produto h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #4b2e2e;
+}
+
+.produto p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.section_discosgnr {
+  padding: 20px;
+}
+
+.generos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  background-color: black;
+}
+
+.generos button {
+  background-color: #fff7cc;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.generos button:hover {
+  background-color: #4b2e2e;
+  color: #fff7cc;
+}
+
+/* Botões */
+
+.produto button {
+  background-color: #4b2e2e;
+  color: #fff7cc;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.produto button:hover, .button_padrao:hover {
+  background-color: #fff7cc;
+  color: #4b2e2e;
+  border: 1px solid #4b2e2e;
+}
+
+/* Footer: */
+
+footer {
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Versão: Desktop */
+@media (min-width: 769px) {
+
+  header h1 {
+    font-size: 40px;
+  }
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  section {
+    width: 1200px;
+  }
+
+/* Index 1 */
+  .section_bemvindo img {
+    max-width: 1200px;
+  }
+
+  .catalogo > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .catalogo img {
+    max-width: 200px;
+  }
+
+/* Index 2 */
+
+  .section_sobrenos > div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section_sobrenos > div > div {
+    border: 1px solid red;
+  }
+
+  .section_sobrenos img {
+    width: 50%;
+    height: auto;
+  }
+
+  .section_contato > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .section_contato p {
+    padding-bottom: 20px;
+  }
+
+/* Index 3 */
+
+  .section_noticias {
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+
+  .section_noticias > div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .section_noticias > div > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section_noticias img {
+    width: 600px;
+  }
+
+  .section_noticias > div > div > div:nth-of-type(2) {
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  .section_novoslancamentos img {
+    display: block;
+    margin: auto;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section_novoslancamentos p {
+    padding: 70px;
+    padding-top: 10px;
+  }
+
+/* Index 4 */
+
+  .section_catalogo > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+  }
+
+
+  .section_catalogo > div img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .section_tabelas > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section_tabelas h1 {
+    margin-top: 20px;
+  }
+
+  .section_tabelas img {
+    width: 500px;
+  }
+
+  .section_tabelas p {
+    padding: 30px;
+  }
+
+}

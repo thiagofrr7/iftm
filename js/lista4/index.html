@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação Eleição</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Candidatos a eleição presidencial 2022</h1>
+  
+  <form>
+    <input type="button" value="Gerar resultado" id="btnGerar">
+  </form>
+
+  <div class="section_eleicao">
+    <div>
+      <img src="" alt="" id="imgCandidato1">
+      <p class="nomeCandidato"><span id="nomeCandidato1"></span></p>
+      <p>Partido: <span id="partidoCandidato1"></span></p>
+      <p><span id="percentual1"></span>%</p>
+    </div>
+
+    <div>
+      <img src="" alt="" id="imgCandidato2">
+      <p class="nomeCandidato"><span id="nomeCandidato2"></span></p>
+      <p>Partido: <span id="partidoCandidato2"></span></p>
+      <p><span id="percentual2"></span>%</p>
+    </div>
+  </div>
+
+  <p class="exibeVencedor">
+    Candidato(a) vencedor(a): <span id="nomeVencedor"></span>
+  </p>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

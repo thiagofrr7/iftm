@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Proprietário</title>
+</head>
+<body>
+<h2>Cadastro de Proprietário</h2>
+
+<form th:action="@{/proprietario/salvar}" th:object="${proprietario}" method="post">
+    <div>
+        <label>Nome:</label>
+        <input type="text" th:field="*{nome}" />
+        <span th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></span>
+    </div>
+    <div>
+        <label>Telefone:</label>
+        <input type="text" th:field="*{telefone}" />
+        <span th:if="${#fields.hasErrors('telefone')}" th:errors="*{telefone}"></span>
+    </div>
+    <button type="submit">Salvar</button>
+</form>
+
+<a th:href="@{/proprietario/lista}">Ver Lista de Proprietários</a>
+</body>
+</html>
