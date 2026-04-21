@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/thiagofrr7/iftm.git"
+    "deploy": "gh-pages -d dist -r https://github.com/thiagofrr7/iftm.git --dest pfjs/lista5"
   },
   "dependencies": {
     "react": "^19.2.5",
