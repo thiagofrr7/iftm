@@ -1,0 +1,13 @@
+.container {
+  text-align: center;
+  padding: 40px;
+  font-family: Rawline, Raleway, sans-serif;
+}
+
+.container h2 {
+  color: #2a5db0;
+}
+
+.container p {
+  margin-bottom: 20px;
+}

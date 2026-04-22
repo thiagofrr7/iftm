@@ -1,0 +1,35 @@
+.container {
+  text-align: center;
+  padding: 40px;
+    font-family: Rawline, Raleway, sans-serif;
+}
+
+.container h2 {
+  color: #2a5db0;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 280px; 
+  height: 120px;
+  margin-top: 100px;
+  margin-left: 400px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.div1:hover {
+  cursor: pointer;
+}
+
+.div1 p {
+  color: #2a5db0;
+  text-transform: uppercase; 
+}
