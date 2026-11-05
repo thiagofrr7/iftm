@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"></link>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Consulta de Publicação</h1>
+    </header>
+    <main>
+        <form class="formulario">
+            <fieldset class="formsBorda">
+                <legend>Dados da Publicação</legend>
+                <p class="pField">Preencha todos os campos abaixo para realizar a busca.</p>
+
+                <div class="campos">
+                    <label for="autor">Autor:</label>
+                    <input type="text" id="autor" class="autor">
+                </div>
+
+                <div class="campos">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" class="titulo">
+                </div>
+
+                <div class="campos">
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" class="isbn" placeholder="Ex: 978-3-16-148410-0">
+                </div>
+
+                <div class="botoes">
+                    <button type="button" class="botaoLimpar">Limpar</button>
+                    <button type="submit" class="botaoBuscar">Buscar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
