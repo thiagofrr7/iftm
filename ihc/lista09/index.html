@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Publicação</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <main>
+        <form class="formulario">
+            <fieldset class="formsBorda">
+                <div id="loadingBar" class="loading-bar hidden"></div>
+
+                <div class="cabecalho-pesquisa">
+                    <div class="marca-livro">
+                        <i data-lucide="book-open"></i>
+                    </div>
+
+                    <div class="legend-container">
+                        <legend>Consulta de Publicação</legend>
+                    </div>
+
+                    <button type="button" id="btnAjuda" class="btn-ajuda" title="Como realizar a busca">
+                        <i data-lucide="help-circle"></i>
+                    </button>
+                </div>
+
+                <div class="conteudo-formulario">
+                    <p class="pField">Preencha um ou mais campos abaixo para consultar o acervo.</p>
+
+                    <div class="linha-destaque"></div>
+
+                    <div class="campos">
+                        <div class="campo-icone-wrap">
+                            <i data-lucide="user-round" class="campo-icone"></i>
+                        </div>
+                        <label for="autor">Autor:</label>
+                        <input type="text" id="autor" class="autor" placeholder="Ex: Machado de Assis">
+                    </div>
+
+                    <div class="campos">
+                        <div class="campo-icone-wrap">
+                            <i data-lucide="book-open" class="campo-icone"></i>
+                        </div>
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" class="titulo" placeholder="Ex: Dom Casmurro">
+                    </div>
+
+                    <div class="campos">
+                        <div class="campo-icone-wrap">
+                            <i data-lucide="barcode" class="campo-icone"></i>
+                        </div>
+                        <label for="isbn">ISBN:</label>
+                        <input type="text" id="isbn" class="isbn" placeholder="Ex: 978-3-16-148410-0">
+                    </div>
+
+                    <div class="botoes">
+                        <div class="orientacao">
+                            <i data-lucide="info"></i>
+                            <span>Preencha ao menos um campo.</span>
+                        </div>
+
+                        <div class="grupo-botoes">
+                            <button type="button" class="botaoLimpar">
+                                <i data-lucide="refresh-ccw" class="btn-icone"></i>
+                                Limpar
+                            </button>
+
+                            <button type="submit" class="botaoBuscar">
+                                <i data-lucide="search" class="btn-icone"></i>
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <section id="resultados" class="resultados-container"></section>
+    </main>
+
+    <button type="button" id="btnTopo" class="btn-topo hidden" title="Voltar ao topo">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Modal de ajuda -->
+    <div id="modalAjuda" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>
+                    <i data-lucide="help-circle"></i>
+                    Como realizar a sua pesquisa
+                </h2>
+
+                <button type="button" id="fecharModal" class="btn-fechar" title="Fechar">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <h3>Instruções de Preenchimento</h3>
+
+                <p>Pode pesquisar livros no acervo de forma flexível. Não é necessário preencher todos os campos ao mesmo tempo:</p>
+
+                <ul>
+                    <li><strong>Por Autor:</strong> Escreva o nome ou sobrenome do autor (ex: Machado de Assis ou Clarice Lispector).</li>
+                    <li><strong>Por Título:</strong> Escreva o nome da obra ou palavra-chave (ex: Dom Casmurro).</li>
+                    <li><strong>Por ISBN:</strong> Introduza o código identificador único do livro (ex: 9788535902778).</li>
+                </ul>
+
+                <hr>
+
+                <h3>Dicas Úteis</h3>
+
+                <ul>
+                    <li><strong>Combinação de campos:</strong> Preencha o Autor e o Título juntos para obter resultados mais precisos.</li>
+                    <li><strong>Atalhos:</strong> Pressione a tecla <code>Enter</code> no teclado para iniciar a pesquisa rapidamente.</li>
+                    <li><strong>Nova consulta:</strong> Utilize o botão <strong>Limpar</strong> para apagar os dados introduzidos e reiniciar a pesquisa.</li>
+                    <li><strong>Fechar ajuda:</strong> Pressione a tecla <code>ESC</code> ou clique fora desta janela para fechar este menu.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmação do botão Limpar -->
+    <div id="modalLimpar" class="modal-overlay hidden">
+        <div class="modal-content modal-confirmacao">
+            <div class="modal-header">
+                <h2>
+                    <i data-lucide="trash-2"></i>
+                    Limpar consulta
+                </h2>
+
+                <button type="button" id="fecharModalLimpar" class="btn-fechar" title="Fechar">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <p>Tem certeza de que deseja apagar os campos preenchidos e os resultados da busca?</p>
+            </div>
+
+            <div class="modal-acoes">
+                <button type="button" id="cancelarLimpar" class="btn-cancelar">Cancelar</button>
+                <button type="button" id="confirmarLimpar" class="btn-confirmar">Sim, limpar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
